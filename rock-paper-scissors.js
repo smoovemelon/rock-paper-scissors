@@ -47,4 +47,12 @@ function playRound(humanChoice, CPUChoice) {
             return 'You lose! Rat beats Garfield!'
         }
     }
+
+    return "Invalid input. Please choose 'Toro', 'Rat', or 'Garfield'"
 }
+
+let CPUChoice = getCPUChoice();
+let humanChoice = getHumanChoice();
+let roundResult = playRound(humanChoice, CPUChoice);
+
+
